@@ -1,0 +1,25 @@
+<div class="h-screen flex">
+    <div class="flex flex-col w-1/2 bg-gradient-to-tr from-blue-500 to-gray-700 i justify-around items-center">
+        <div class="pt-10">
+            <h1 class="text-white font-bold text-5xl font-sans">Dolibase</h1>
+            <img class="mt-5 rounded-lg h-52" src="../../../assets/dolibarr.png">
+            <p class="text-white mt-1">Dolibarr ERP/CRM Database Manager</p>
+            <button type="submit" class="block w-28 bg-white text-blue-800 mt-4 py-2 rounded-2xl font-bold mb-2">Read More</button>
+        </div>
+    </div>
+    <div class="flex w-1/2 justify-center items-center bg-white">
+        <form class="bg-white">
+            <h1 class="text-gray-800 font-bold text-2xl mb-1">Welcome on Dollibase</h1>
+            <p class="text-sm font-normal text-gray-600 mb-7">Login to purchase</p>
+            <div class="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
+
+                <input class="pl-2 outline-none border-none" type="text" name="" id="" placeholder="Email Address" />
+            </div>
+            <div class="flex items-center border-2 py-2 px-3 rounded-2xl">
+                <input class="pl-2 outline-none border-none" type="text" name="" id="" placeholder="Password" />
+            </div>
+            <button type="submit" class="block w-full bg-blue-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2" (click)="tools.navigate('/home')">Login</button>
+            <span class="text-sm ml-2 hover:text-blue-500 cursor-pointer">Forgot Password ?</span>
+        </form>
+    </div>
+</div>

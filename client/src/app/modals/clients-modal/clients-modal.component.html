@@ -1,0 +1,50 @@
+<div class="flex flex-row justify-between p-6 bg-gray-800 text-lg border-b border-gray-200">
+    <p class="font-semibold text-white underline">Create a new client</p>
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          ></path>
+        </svg>
+</div>
+<div class="flex flex-col px-6 py-5 bg-gray-50">
+    <p class="mb-2 font-semibold text-gray-700">Client name :</p>
+    <input type="text" name="" placeholder="Type name..." class="p-5 mb-5 bg-white border border-gray-200 rounded shadow-sm h-10" id="">
+    <p class="mb-2 font-semibold text-gray-700">Database name :</p>
+    <input type="text" name="" placeholder="Type database name..." class="p-5 mb-5 bg-white border border-gray-200 rounded shadow-sm h-10" id="">
+    <p class="mb-2 font-semibold text-gray-700">client website url :</p>
+    <input type="text" name="" placeholder="Enter url..." class="p-5 mb-5 bg-white border border-gray-200 rounded shadow-sm h-10" id="">
+    <div class="flex flex-col sm:flex-row items-center mb-5 sm:space-x-5">
+        <div class="w-full sm:w-1/2">
+            <p class="mb-2 font-semibold text-gray-700">Entrypoint needed :</p>
+            <mat-form-field appearance="fill" class=" w-1/3 rounded-full">
+                <mat-label class="text-black">Entrypoint</mat-label>
+                <mat-select [formControl]="toppings" multiple>
+                    <mat-select-trigger>
+                        {{toppings.value ? toppings.value[0] : ''}}
+                        <span *ngIf="toppings.value?.length > 1" class="example-additional-selection">
+                      (+{{toppings.value.length - 1}} {{toppings.value?.length === 2 ? 'other' : 'others'}})
+                    </span>
+                    </mat-select-trigger>
+                    <mat-option *ngFor="let topping of toppingList" [value]="topping">{{topping}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="flex flex-row w-2/3">
+            <p class="mb-2 font-semibold text-gray-700 pb-20">id :</p>
+            <mat-slider class="mt-10 w-2/3" thumbLabel [displayWith]="formatLabel" step="1" min="0" max="1790" aria-label="units"></mat-slider>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="flex flex-row items-center justify-between p-5">
+        <button class="px-4 py-2 text-white font-semibold bg-red-500 rounded-full">
+            Cancel
+          </button>
+        <p class="text-center font-bold text-lg text-black"> Create new user or cancel your changes </p>
+        <button class="px-4 py-2 text-white font-semibold bg-blue-500 rounded-full">
+          Save
+        </button>
+    </div>
+    <!-- </div> -->

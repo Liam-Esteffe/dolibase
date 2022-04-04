@@ -1,0 +1,63 @@
+<app-sidebar class="float-left"></app-sidebar>
+<div class="w-full">
+    <app-navbar title="Dashboard"></app-navbar>
+</div>
+
+<div class="bg-white min-h-screen rounded-lg shadow-lg">
+    <div class="ml-80 flex flex-row">
+        <div class="w-2/5 pt-10">
+            <div class="card bg-gray-800 rounded-lg transform transition duration-500 hover:scale-105 w-4/5">
+                <h1 class="text-center text-white text-2xl font-bold">Futur Crons Maj Calendar <i class="fa-solid fa-rotate"></i> </h1>
+                <div class="pl-36">
+                    <div class="flex flex-wrap 2xl:-mx-4 -mx-10">
+                        <app-crons-dater [cronsDate]="cronsDate1"></app-crons-dater>
+                        <app-crons-dater [cronsDate]="cronsDate2"></app-crons-dater>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20 2xl:mt-10  w-3/5 mx-auto pr-10 transform transition duration-500 hover:scale-105">
+            <div class="w-full shadow-2xl subpixel-antialiased rounded h-64 bg-black border-black mx-auto">
+                <div class="flex items-center h-6 rounded-t bg-blue-500 border-b border-gray-500 text-center text-white" id="headerTerminal">
+                    <div class="flex ml-2 items-center text-center border-red-900 bg-red-500 shadow-inner rounded-full w-3 h-3" id="closebtn">
+                    </div>
+                    <div class="ml-2 border-yellow-900 bg-yellow-500 shadow-inner rounded-full w-3 h-3" id="minbtn">
+                    </div>
+                    <div class="ml-2 border-green-900 bg-green-500 shadow-inner rounded-full w-3 h-3" id="maxbtn">
+                    </div>
+                    <div class="mx-auto pr-16" id="terminaltitle">
+                        <p class="text-center text-sm">Dashboard Console</p>
+                    </div>
+
+                </div>
+                <div class="pl-1 pt-1 h-auto  text-white font-mono text-xs bg-black" id="console">
+                    <p class="pb-1">Last login: Wed Sep 25 09:11:04 on ttys002</p>
+                    <p class="pb-1">Liam-Esteffe:MongooseDatabase liam$</p>
+                    <p class="pb-1">Database name: MongooseAdmin</p>
+                    <p class="pb-1 text-red-400 "><span class="font-bold"> --- Error :</span> SurfSystem Database Conflict into properties _id cannot cast (String) effect</p>
+                    <p class="pb-1 text-red-400 "><span class="font-bold"> --- Error :</span> SurfSystem Database Conflict into properties _id cannot cast (String) effect</p>
+                    <p class="pb-1 text-red-400 "><span class="font-bold"> --- Error :</span> SurfSystem Database Conflict into properties _id cannot cast (String) effect</p>
+                    <p class="pb-1 text-red-400 "><span class="font-bold"> --- Error :</span> SurfSystem Database Conflict into properties _id cannot cast (String) effect</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+
+
+    <mat-divider></mat-divider>
+
+    <div class="ml-80 mt-10 card bg-gray-800 rounded-lg transform transition duration-500 hover:scale-105 w-2/3">
+        <h1 class="pl-10 pt-3 text-white font-bold text-2xl">Latest Client <i class="fa-solid fa-users"></i></h1>
+        <div class="flex flex-row pt-2">
+            <app-clients-card class="ml-6" [clients]="client"></app-clients-card>
+            <app-clients-card class="ml-6" [clients]="client"></app-clients-card>
+            <app-clients-card class="ml-6" [clients]="client"></app-clients-card>
+        </div>
+    </div>
+    <br/>
+</div>
