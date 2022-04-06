@@ -20,7 +20,7 @@ export class ClientsComponent implements OnInit {
     const dialogRef = this.dialog.open(ClientsModalComponent, {
         height: '60%',
         width: '60%',
-        panelClass: 'app-full-bleed-dialog', 
+        panelClass: 'app-full-bleed-dialog',
     });
 }
 
