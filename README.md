@@ -1,7 +1,7 @@
 # Dolibase
 ## _The best Dolibarr Database Manager_
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger) [![CodeFactor](https://www.codefactor.io/repository/github/zerojnr/dolibase/badge)](https://www.codefactor.io/repository/github/zerojnr/dolibase)
 
 Dolibase is an virtual Database who contain all your clients in subbase.
 It's an virtual manager to manage dolibarr data.
